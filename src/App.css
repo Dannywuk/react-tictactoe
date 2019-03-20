@@ -1,0 +1,137 @@
+.App {
+  text-align: center;
+}
+
+#title {
+  font-family: 'UnifrakturCook', 'Arial', 'san-serif';
+  text-transform: uppercase;
+  margin: 5px 5px 10px;
+  font-size: 3rem;
+  letter-spacing: .1em;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.gameBox {
+  border: 2px solid #000000;
+  border-radius: 10px;
+  height: 130px;
+  width: 130px;
+  margin: 2px;
+  background-color: rgb(255,255,255);
+  z-index: 1;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Merienda One', 'Arial', 'san-serif';
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.gameBox:hover{
+  transform: scale(1.1,1.1);
+}
+
+.board-flex{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container {
+  width: 420px;
+  height: 420px;
+  background-color: #B30059;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.record-flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Metal Mania', 'Arial', 'san-serif';
+  font-size: 1.9rem;
+}
+
+#record th {
+  text-decoration: underline;
+  padding-right: 20px;
+}
+
+#record th:last-child {
+  padding-right: 35px;
+}
+
+.reset {
+  cursor: pointer;
+  transition: transform .8s ease-in-out;
+  animation: App-logo-spin infinite 20s linear;
+  /*height: 40vmin;*/
+}
+
+.reset img{
+  height: 60px;
+  width: 60px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+/*.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
